@@ -23,8 +23,8 @@ class Scraper
   
   def get_courses
     title = get_page.css('.post').first.css("h2").text
-    schedule = get_page.css('post').first
-    description =
+    schedule = get_page.css('.post').first.css(".date").text
+    description = get_page.css('.post').first.css("")
     #binding.pry
   end
   
